@@ -2,7 +2,7 @@
 using SimpleAPI.Core.Models;
 using System;
 
-namespace Infrastructure.Services
+namespace SimpleAPI.Infrastructure.Services
 {
     public class ReverseResultService : IResultService
     {

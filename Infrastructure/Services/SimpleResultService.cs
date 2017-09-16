@@ -1,7 +1,7 @@
 ﻿using SimpleAPI.Core.Interfaces;
 using SimpleAPI.Core.Models;
 
-namespace Infrastructure.Services
+namespace SimpleAPIInfrastructure.Services
 {
     public class SimpleResultService : IResultService
     {
