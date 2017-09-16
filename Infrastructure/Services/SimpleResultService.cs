@@ -6,7 +6,7 @@ namespace Infrastructure.Services
 {
     public class SimpleResultService : IResultService
     {
-        public SimpleResult GetResult(string input = "no input provided")
+        public SimpleResult GetResult(string input)
         {
             var result = new SimpleResult
             {

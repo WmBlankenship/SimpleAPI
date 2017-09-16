@@ -4,6 +4,6 @@ namespace SimpleAPI.Core.Interfaces
 {
     public interface IResultService
     {
-        SimpleResult GetResult(string input);
+        SimpleResult GetResult(string input = "no input provided");
     }
 }
