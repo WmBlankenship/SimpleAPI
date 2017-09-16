@@ -1,5 +1,4 @@
-﻿using System;
- 
+﻿
 namespace SimpleAPI.Core.Models
 {
     public class SimpleResult

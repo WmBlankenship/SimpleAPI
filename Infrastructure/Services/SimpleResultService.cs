@@ -1,6 +1,5 @@
 ﻿using SimpleAPI.Core.Interfaces;
 using SimpleAPI.Core.Models;
-using System;
 
 namespace Infrastructure.Services
 {
