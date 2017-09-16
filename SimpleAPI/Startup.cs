@@ -21,7 +21,8 @@ namespace SimpleAPI
         {
             services.AddMvc();
 
-            services.AddTransient<IResultService, SimpleResultService>();
+            //services.AddTransient<IResultService, SimpleResultService>();
+            services.AddTransient<IResultService, ReverseResultService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

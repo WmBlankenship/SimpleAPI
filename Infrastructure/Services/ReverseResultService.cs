@@ -8,17 +8,20 @@ namespace Infrastructure.Services
     {
         public SimpleResult GetResult(string input)
         {
-            var chars = input.ToCharArray();
-            Array.Reverse(chars);
-            var reverse = chars.ToString();
-
             var result = new SimpleResult
             {
                 Input = input,
-                Output = reverse
+                Output = ReverseString(input)
             };
 
             return result;
+        }
+
+        private string ReverseString(string input)
+        {
+            var chars = input.ToCharArray();
+            Array.Reverse(chars);
+            return new string(chars);
         }
     }
 }

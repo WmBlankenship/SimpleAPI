@@ -20,14 +20,16 @@ namespace SimpleAPI.Controllers
         {
             var result = _resultService.GetResult();
 
-            return result.ToString();
+            return result.Output;
         }
 
         // GET api/values/input
         [HttpGet("{input}")]
         public string Get(string input)
         {
-            throw new NotImplementedException();
+            var result = _resultService.GetResult(input);
+
+            return result.Output;
         }
 
         // POST api/values
