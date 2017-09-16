@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAPI", "SimpleAPI\Simp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAPI.Core", "SimpleAPI.Core\SimpleAPI.Core.csproj", "{8F97ECE9-36E6-49FD-8959-40C184499794}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{13532EBC-6D9B-4BE0-B0D1-72EEB535F5E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAPI.Infrastructure", "Infrastructure\SimpleAPI.Infrastructure.csproj", "{13532EBC-6D9B-4BE0-B0D1-72EEB535F5E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
