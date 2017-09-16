@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 using SimpleAPI.Core.Interfaces;
 using System;
+using System.Net.Http;
+using System.Text;
 
 namespace SimpleAPI.Controllers
 {
@@ -25,11 +28,11 @@ namespace SimpleAPI.Controllers
 
         // GET api/values/input
         [HttpGet("{input}")]
-        public string Get(string input)
+        public IActionResult Get(string input)
         {
             var result = _resultService.GetResult(input);
-
-            return result.Output;
+            var output = $"<html><body><strong>{result.Output}</strong></body></html>";
+            return Content(output, new MediaTypeHeaderValue("text/html"));
         }
 
         // POST api/values
