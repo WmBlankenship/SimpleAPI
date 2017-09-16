@@ -23,9 +23,9 @@ namespace SimpleAPI.Controllers
             return result.ToString();
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        // GET api/values/input
+        [HttpGet("{input}")]
+        public string Get(string input)
         {
             throw new NotImplementedException();
         }

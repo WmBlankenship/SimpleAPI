@@ -6,12 +6,12 @@ namespace Infrastructure.Services
 {
     public class SimpleResultService : IResultService
     {
-        public SimpleResult GetResult()
+        public SimpleResult GetResult(string input = "no input provided")
         {
             var result = new SimpleResult
             {
-                Message = "This result was accessed at ",
-                Timestamp = DateTimeOffset.UtcNow
+                Input = input,
+                Output = input
             };
 
             return result;
