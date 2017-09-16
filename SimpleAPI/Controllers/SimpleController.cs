@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SimpleAPI.Core.Interfaces;
 using System;
 
 namespace SimpleAPI.Controllers
@@ -6,13 +7,20 @@ namespace SimpleAPI.Controllers
     [Route("api/[controller]")]
     public class SimpleController : Controller
     {
+        private readonly IResultService _resultService;
+
+        public SimpleController(IResultService resultService)
+        {
+            _resultService = resultService;
+        }
+        
         // GET api/values
         [HttpGet]
         public string Get()
         {
-            var timestamp = DateTimeOffset.UtcNow;
+            var result = _resultService.GetResult();
 
-            return $"This API was accessed at {timestamp}";
+            return result.ToString();
         }
 
         // GET api/values/5
