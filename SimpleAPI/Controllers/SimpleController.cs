@@ -2,8 +2,6 @@
 using Microsoft.Net.Http.Headers;
 using SimpleAPI.Core.Interfaces;
 using System;
-using System.Net.Http;
-using System.Text;
 
 namespace SimpleAPI.Controllers
 {
